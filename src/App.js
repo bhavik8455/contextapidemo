@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import Counter from './components/button';
 import './App.css';
+import { useContext } from 'react';
+import { Countercontext } from "./context/Counter";
+
 
 function App() {
+
+  const CounterState = useContext(Countercontext);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <h1>Counter is {CounterState.count}</h1>
+      <Counter />
+      <Counter />
+      <Counter />
+      <Counter />
+
+
     </div>
   );
 }
