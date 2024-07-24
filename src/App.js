@@ -1,26 +1,24 @@
+import Counter from './components/button';
 import './App.css';
-import Input from "./components/input";
-import Button from "./components/button";
-import Card from './components/card';
-
-
+import { useContext } from 'react';
+import { Countercontext } from "./context/Counter";
 
 
 function App() {
 
-
-
+  const CounterState = useContext(Countercontext);
   return (
     <div className="App">
-      <h1>Weather  App</h1>
-      <Input />
-      <Button value="Search" />
-      <Card />
-      <Button value="Refresh" />
+
+      <h1>Counter is {CounterState.count}</h1>
+      <Counter />
+      <Counter />
+      <Counter />
+      <Counter />
 
 
     </div>
   );
-};
+}
 
 export default App;

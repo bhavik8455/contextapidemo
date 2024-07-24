@@ -1,43 +1,21 @@
-.card {
-  padding: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
-  width: auto;
-
-  border-radius: 5px;
-
-
-}
-
-.search {
-
-  border-radius: 2rem;
-
-  width: auto;
-  padding: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
-
-}
-
-.btn {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  padding: 5px;
-  border-radius: 5px;
-  border: unset;
-  margin: 2rem;
-  align-items: center;
-  cursor: pointer;
-
-
-}
-
 .App {
   text-align: center;
-  align-items: center;
-  display: grid;
-  justify-content: center;
-  padding: 5rem;
+  border: 2px solid;
+  width: 20%;
+  padding: 5px;
+  height: 200px;
+  display: block;
+  text-align: center;
 
+  align-items: center;
+  margin-left: 33rem;
+  border-radius: 2rem;
+  background-color: azure;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.title {
+  align-items: center;
+  margin: 5rem 37rem;
 
 }
